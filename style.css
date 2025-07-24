@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Variables*/
+:root{
+    --color1: black;
+    --color2: white;
+    --color3: #A8DADC;
+    --color4: rgba(82, 81, 81, 0.1);
+    --ff: "Inter", sans-serif; 
+    --p: 1rem/1.5em var(--ff);
+    --h1: 600 2.2rem/1.2em var(--ff);
+    --h2: 600 1.3rem/1em var(--ff);
+    --spacing1: 4px;
+    --spacing2: 8px;
+    --spacing3: 16px;
+    --spacing4: 20px;
+    --spacing5: 40px;
+    --spacing6: 80px;
+    --spacing7: 160px;
+
+
+}
+h1{
+    font:var(--h1);
+}
+h2{
+    font:var(--h2);
+}
+p{
+    font:var(--p);
+}
+button{
+    all:unset;
+    display: inline-block;
+    margin: var(--spacing2) 0;
+    background: var(--color3);
+    padding: var(--spacing2) var(--spacing3);
+    color: var(--color2);
+    border-radius: var(--spacing2);
+    border-bottom: solid var(--spacing1) var(--color4);
+    font: var(--p);
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(180deg,var(--color2),var(--color1));
+    transition: 0.3s ease-in-out;
+}
+body{
+    font-family:  var(--ff);
+    text-wrap: balance;
+}
+nav{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    background-color:var(--color2);
+    box-shadow: 3px 3px 5px var(--color4);
+    font-family: var(--ff);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+   height: 6vh;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--color1);
+}
+nav a:hover{
+    background-color: var(--color3);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li.logo a:hover {
+    background-color: transparent;
+}
+#logo{
+ height: 100%;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.555);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px var(--color1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: var(--ff);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menuButton{
+    display: none;
+}
+@media(max-width:705px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+    display: block;
+}
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+#naslovna{
+    width: 80%; 
+}
+.centar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
