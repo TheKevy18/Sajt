@@ -13,9 +13,10 @@
     </head>
     
     <body>
+      <div class="page-wrapper">
        <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()><a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html">Početna</a></li>
                 <li><a href="ponuda.html">Automobili</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -28,9 +29,108 @@
                 <li class="hideOnMobile"><a href="ponuda.html">Automobili</a></li>
                 <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
                 <li class="hideOnMobile"><a href="oNama.html">O nama</a></li>
-                <li class="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menuButton" onclick=showSidebar()><a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
        </nav>
+       <h1 id="n_kontakt">Kontakti</h1>
+       <div class="kontakt">
+            <div class="tekst">
+             <h2>Adresa:</h2>
+             <h3>Srbija, Beograd, Padinska Skela 21</h3>
+             <h3>Broj telefona:<a href="tel:+381601234567"> +381 60 1234567</a></h3>
+             <h3>Email: <a href="mailto:info@firma.com">info@firma.com</a></h3>
+             </div>
+             <div class="tekst">
+             <h3>Adresa:</h3>
+             <h4>Srbija, Beograd, Padinska Skela 21</h4>
+             <h4>Broj telefona:<a href="tel:+381601234567"> +381 60 1234567</a></h4>
+             <h4>Email: <a href="mailto:info@firma.com">info@firma.com</a></h4>
+             <h3>Adresa:</h3>
+             <h4>Srbija, Beograd, Padinska Skela 21</h4>
+             <h4>Broj telefona:<a href="tel:+381601234567"> +381 60 1234567</a></h4>
+             <h4>Email: <a href="mailto:info@firma.com">info@firma.com</a></h4>
+            </div>
+            
+            <div class="mapa">
+                <h2>Naša lokacija</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d998.4800092772678!2d20.427668037389545!3d44.941066984133684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1757756731194!5m2!1ssr!2srs"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       </div>
+
+</div>
+ <footer class="footer">
+  <div class="footer-container">
+    
+   
+    <div class="footer-section about">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <p>Kratak opis firme ovde.<br> Profesionalni tekst o brendu.</p>
+    </div>
+
+    
+    <div class="footer-section links">
+      <h4>Pretraži</h4>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="ponuda.html">Automobili</a></li>
+        <li><a href="oNama.html">O nama</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+        <h4>Kontakt</h4>
+
+            <p>
+                <svg height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path d="M800 416a288 288 0 1 0-576 0c0 118.144 94.528 272.128 288 456.576C705.472 688.128 800 534.144 800 416zM512 960C277.312 746.688 160 565.312 160 416a352 352 0 0 1 704 0c0 149.312-117.312 330.688-352 544z"/>
+                <path d="M512 448a64 64 0 1 0 0-128 64 64 0 0 0 0 128zm0 64a128 128 0 1 1 0-256 128 128 0 0 1 0 256zm345.6 192L960 960H672v-64H352v64H64l102.4-256h691.2zm-68.928 0H235.328l-76.8 192h706.944l-76.8-192z"/>
+                </svg>
+                <a href="https://www.google.com/maps">Adresa</a>
+            </p>
+
+            <p>
+                <svg height="24px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path stroke="var(--color1)" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"/>
+                </svg>
+                <a href="mailto:info@firma.com">info@firma.com</a>
+            </p>
+
+            <p>
+                <svg height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3545 22.2323C15.3344 21.7262 11.1989 20.2993 7.44976 16.5502C3.70065 12.8011 2.2738 8.66559 1.76767 6.6455C1.47681 5.48459 2.00058 4.36434 2.88869 3.72997L5.21694 2.06693C6.57922 1.09388 8.47432 1.42407 9.42724 2.80051L10.893 4.91776C11.5152 5.8165 11.3006 7.0483 10.4111 7.68365L9.24234 8.51849C9.41923 9.1951 9.96939 10.5846 11.6924 12.3076C13.4154 14.0306 14.8049 14.5807 15.4815 14.7576L16.3163 13.5888C16.9517 12.6994 18.1835 12.4847 19.0822 13.1069L21.1995 14.5727C22.5759 15.5257 22.9061 17.4207 21.933 18.783L20.27 21.1113C19.6356 21.9994 18.5154 22.5232 17.3545 22.2323ZM8.86397 15.136C12.2734 18.5454 16.0358 19.8401 17.8405 20.2923C18.1043 20.3583 18.4232 20.2558 18.6425 19.9488L20.3056 17.6205C20.6299 17.1665 20.5199 16.5348 20.061 16.2171L17.9438 14.7513L17.0479 16.0056C16.6818 16.5182 16.0047 16.9202 15.2163 16.7501C14.2323 16.5378 12.4133 15.8569 10.2782 13.7218C8.1431 11.5867 7.46219 9.7677 7.24987 8.7837C7.07977 7.9953 7.48181 7.31821 7.99439 6.95208L9.24864 6.05618L7.78285 3.93893C7.46521 3.48011 6.83351 3.37005 6.37942 3.6944L4.05117 5.35744C3.74413 5.57675 3.64162 5.89565 3.70771 6.15943C4.15989 7.96418 5.45459 11.7266 8.86397 15.136Z" fill="var(--color5)"/>
+                </svg>
+                <a href="tel:+381601234567">+381 60 123 4567</a>
+            </p>
+        </div>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank">
+                
+                <svg height="24px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="var(--color5)">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+
+                 </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                </a>
+
+                <a href="https://facebook.com" target="_blank">
+                <svg height="24px" viewBox="0 0 266.895 266.895" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.164 266.895c8.134 0 14.729-6.596 14.729-14.73V14.73c0-8.137-6.596-14.73-14.729-14.73H14.73C6.593 0 0 6.594 0 14.73v237.434c0 8.135 6.593 14.73 14.73 14.73h237.434z" fill="var(--color5)"/>
+                    <path d="M184.152 266.895V163.539h34.692l5.194-40.28h-39.887V97.542c0-11.662 3.238-19.609 19.962-19.609l21.329-.01V41.897c-3.689-.49-16.351-1.587-31.08-1.587-30.753 0-51.807 18.771-51.807 53.244v29.705h-34.781v40.28h34.781v103.355h41.597z" fill="var(--color1)"/>
+                </svg>
+                </a>
+            </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Rent Automobila. Sva prava zadržana.</p>
+    </div>
+ </footer>
     <script src="script.js"></script>
     </body>
 </html>
